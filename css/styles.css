@@ -45,6 +45,7 @@ p {
   text-transform: uppercase;
   display: inline-block;
   margin-left: 25px;
+  font-size: 10px;
 }
 
 .navbar-items a {
@@ -322,7 +323,7 @@ footer {
 }
 
 /* celulares 576px*/
-@media (max-width: 576px) {
+@media (max-width: 480px) {
   html,
   body {
     overflow-x: hidden;
@@ -330,11 +331,20 @@ footer {
 
   .navbar-items li {
     font-size: 12px;
-    margin-top: 10px;
+    margin-left: 5px;
+  }
+
+  .navbar-items .default-btn {
+    font-size: 12px;
+    padding: 12px 20px;
   }
 
   .main-banner p {
     padding: 0 2rem;
+  }
+
+  .services-container ul {
+    flex-direction: column;
   }
 
   .plans-container {
@@ -344,19 +354,24 @@ footer {
   }
 
   .plan {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     max-width: 100%;
     margin-bottom: 15px;
   }
 
   .searchdomain-container h2 {
+    font-size: 30px;
+  }
+
+  .searchdomain-container p {
     font-size: 20px;
   }
 
   .searchdomain-container input[type="text"] {
     width: 100%;
   }
-  
+
   .contact-container {
     padding: 3rem 2rem;
   }
@@ -367,3 +382,13 @@ footer {
     margin: 10px 0;
   }
 }
+
+  .pricing-container h2 {
+    margin-bottom: 20px;
+  }
+
+  .pricing-container p {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 25px
+  }
